@@ -1,10 +1,12 @@
 import "./index.css"; // contains @tailwind directives
 import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Image } from "@heroui/image";
+import { Button } from "@heroui/button";
 import grapeNoseImage from "./assets/GrapeNose_WineTastings_Background.jpg";
 import grapeNoseLogo from "./assets/GrapeNose_Logo_Orange_v2.png";
 import grapeNoseSanda from "./assets/GrapeNose_WineTastings_Sanda.jpg";
 import { Instagram } from "lucide-react";
+
 
 export default function App() {
   return (
@@ -30,18 +32,12 @@ export default function App() {
             </small>
             <p className="text-sm font-bold pl-1.5 ">Sanda Silakaktina</p>
             <a
-              href="mailto:thegrapenose@gmail.com"
-              className="text-tiny pl-1.5 pt-4 hover:text-grape-red focus:outline-none focus:ring-2 focus:ring-grape-red"
-            >
-              thegrapenose@gmail.com
-            </a>
-            <a
               href="https://www.instagram.com/thegrapenose/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit The Grape Nose on Instagram"
               className="
-                flex items-center gap-1 pl-1.5 pb-4
+                flex items-center gap-1 pl-1.5
                 text-tiny
                 hover:text-grape-red
                 focus:outline-none focus:ring-2 focus:ring-grape-red
@@ -50,6 +46,19 @@ export default function App() {
               <Instagram className="w-3 h-3" />
               <span>thegrapenose</span>
             </a>
+            <Button  className="bg-gradient-to-tr from-grape-red to-grape-red text-white shadow-lg my-4" radius="md">
+              <a
+                href="mailto:thegrapenose@gmail.com"
+              >
+                Book today
+              </a>
+            </Button>
+            {/* <a
+              href="mailto:thegrapenose@gmail.com"
+              className="text-tiny pl-1.5 pt-4 hover:text-grape-red focus:outline-none focus:ring-2 focus:ring-grape-red"
+            >
+              thegrapenose@gmail.com
+            </a> */}
           </CardHeader>
 
           <CardBody className="overflow-visible py-2">

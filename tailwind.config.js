@@ -6,7 +6,7 @@ module.exports = {
   content: [
     "./index.html",                       // Vite HTML entry
     "./src/**/*.{js,ts,jsx,tsx}",         // ← ALL your React/TSX files
-    "./node_modules/@heroui/theme/dist/components/(card|ripple).js",
+    "./node_modules/@heroui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
