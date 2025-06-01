@@ -46,7 +46,7 @@ export default function App() {
               <Instagram className="w-3 h-3" />
               <span>thegrapenose</span>
             </a>
-            <Button  className="bg-gradient-to-tr from-grape-red to-red-400 text-white shadow-lg my-4" radius="sm" >
+            <Button className="bg-gradient-to-tr from-grape-red to-red-400 text-white shadow-lg my-4 px-6" radius="sm" size="sm">
               <a
                 href="mailto:thegrapenose@gmail.com"
               >
