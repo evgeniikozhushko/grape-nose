@@ -2,8 +2,9 @@ import './index.css';                               // contains @tailwind direct
 import { Card, CardHeader, CardBody } from '@heroui/card';
 import { Image } from '@heroui/image';
 import grapeNoseImage from './assets/GrapeNose_WineTastings_Background.jpg';
-import grapeNoseLogo from './assets/GrapeNose_Logo_Black_v3.png';
+import grapeNoseLogo from './assets/GrapeNose_Logo_Orange_v2.png';
 import grapeNoseSanda from './assets/GrapeNose_WineTastings_Sanda.jpg';
+// import { Instagram } from 'lucide-react/dist/esm/icons/instagram';
 
 export default function App() {
   return (
@@ -24,9 +25,11 @@ export default function App() {
               src={grapeNoseLogo}
               width={200}
             />
-            <p className="text-tiny uppercase font-bold pl-1.5 text-grape-red ">Sanda Silakaktina</p>
-            <small className="text-default-500 pl-1.5">Wine Tastings</small>
-            {/* <h4 className="font-bold text-large">Grape Nose</h4> */}
+            <small className="text-tiny text-default-500 pl-1.5">private wine tastings</small>
+            <p className="text-sm font-bold pl-1.5 ">Sanda Silakaktina</p>
+            <h4 className="text-tiny pl-1.5 pt-4">thegrapenose@gmail.com</h4>
+            {/* <Instagram /> */}
+            <h4 className="text-tiny pl-1.5 pb-4">thegrapenose</h4>
           </CardHeader>
 
           <CardBody className="overflow-visible py-2">

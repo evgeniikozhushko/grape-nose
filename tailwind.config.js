@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'grape-red': '#F05437',
+        'grape-blue': '#1B0F2A',
       },
     },
   },
