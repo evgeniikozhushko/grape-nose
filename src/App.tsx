@@ -27,7 +27,7 @@ export default function App() {
               src={grapeNoseLogo}
               width={200}
             />
-            <small className="text-tiny text-default-500 pl-1.5">
+            <small className="text-tiny text-default-500 pl-1.5 pb-2">
               private wine tastings
             </small>
             <p className="text-sm font-bold pl-1.5 ">Sanda Silakaktina</p>
