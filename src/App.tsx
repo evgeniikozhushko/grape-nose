@@ -7,7 +7,6 @@ import grapeNoseLogo from "./assets/GrapeNose_Logo_Orange_v2.png";
 import grapeNoseSanda from "./assets/GrapeNose_WineTastings_Sanda.jpg";
 import { Instagram } from "lucide-react";
 
-
 export default function App() {
   return (
     <div className="relative w-screen h-screen overflow-hidden">
@@ -19,7 +18,23 @@ export default function App() {
 
       {/* centred Card */}
       <div className="relative z-10 flex items-center justify-center w-full h-full px-4">
-        <Card className="py-4 bg-white/80 backdrop-blur-sm shadow-xl w-full max-w-[470px]">
+        <Card className="relative py-4 bg-white/80 backdrop-blur-sm shadow-xl w-full max-w-[470px]">
+
+          {/* Instagram icon, top-right */}
+          <a
+            href="https://www.instagram.com/thegrapenose/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit The Grape Nose on Instagram"
+            className="
+            absolute top-4 right-4 z-20
+            flex items-center justify-center
+            focus:outline-none focus:ring-2 focus:ring-grape-red
+            w-6 h-6
+          "
+          >
+            <Instagram className="w-5 h-5 text-black hover:text-grape-red transition-colors"   />
+          </a>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <Image
               alt="Grape Nose"
@@ -27,11 +42,12 @@ export default function App() {
               src={grapeNoseLogo}
               width={200}
             />
-            <small className="text-tiny text-default-500 pl-1.5 pb-2">
+            <p className="text-sm font-bold pl-1.5 ">Sanda Silakaktina</p>
+            <small className="text-tiny text-default-500 pl-1.5">
               private wine tastings
             </small>
-            <p className="text-sm font-bold pl-1.5 ">Sanda Silakaktina</p>
-            <a
+
+            {/* <a
               href="https://www.instagram.com/thegrapenose/"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,14 +60,14 @@ export default function App() {
               "
             >
               <Instagram className="w-3 h-3" />
-              <span>thegrapenose</span>
-            </a>
-            <Button className="bg-gradient-to-tr from-grape-red to-red-400 text-white shadow-lg my-4 px-6" radius="sm" size="sm">
-              <a
-                href="mailto:thegrapenose@gmail.com"
-              >
-                Book today
-              </a>
+            </a> */}
+
+            <Button
+              className="bg-gradient-to-tr from-grape-red to-red-400 text-white shadow-lg my-4 px-6"
+              radius="sm"
+              size="sm"
+            >
+              <a href="mailto:thegrapenose@gmail.com">Book today</a>
             </Button>
             {/* <a
               href="mailto:thegrapenose@gmail.com"
