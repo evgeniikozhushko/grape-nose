@@ -4,7 +4,7 @@ import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import grapeNoseImage from "./assets/GrapeNose_WineTastings_Background.jpg";
 import grapeNoseLogo from "./assets/GrapeNose_Logo_Orange_v2.png";
-import grapeNoseSanda from "./assets/GrapeNose_WineTastings_Sanda.jpg";
+import grapeNoseSanda from "./assets/GrapeNose_WineTastings_Sanda_v2.jpg";
 import { Instagram } from "lucide-react";
 
 export default function App() {
